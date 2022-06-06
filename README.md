@@ -1,7 +1,12 @@
-# Running project.
+# Project Assesment.
 
 Used http-server NPM package to create local server.
-Command: http-server -c-1
+
+## Http-server installation
+
+```bash
+npm install http-server
+```
 
 ## Local Server Initiation
 
