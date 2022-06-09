@@ -6,6 +6,16 @@
     <!-- lib -->
     <script src="./old/MooTools.js"></script>
     <script src="./old/WebComponent.js"></script>
+    <!-- Load React. -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <!-- old ui code  -->
     <link rel="stylesheet" href="./old/global.css" />
     <link rel="stylesheet" href="./old/MyFunComponent.css" />
@@ -18,21 +28,9 @@
       <div id="new"></div>
       <div id="old"></div>
     </div>
-    <!-- Load React. -->
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script
-      src="https://unpkg.com/react@18/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-      crossorigin
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <!-- Load our React component. -->
     <script type="text/babel" src="./new/NewComponent.js"></script>
-
     <script type="text/babel">
       ReactDOM.render(<NewComponent />, document.getElementById("new"));
     </script>

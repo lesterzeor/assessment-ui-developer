@@ -23,6 +23,7 @@ const Form = () => {
         currentButton.disabled = false;
       }
       /////
+      return;
     });
     ////////
 
